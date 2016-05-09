@@ -1,0 +1,61 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1647" measuredH="689" mockupW="1235" mockupH="684">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="412" y="5" w="1235" h="684" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>14540253</color>
+        <text>A%20Web%20Page%0Ahttp%3A//172.16.21.120/GSB-prod/M%E9dicaments</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Image" x="637" y="133" w="230" h="202" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>antiviraux</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Image" x="1170" y="133" w="229" h="202" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>anti-inflammatoires</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::List" x="637" y="335" w="230" h="321" measuredW="100" measuredH="132" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Medoc%201%0AM%E9doc%202%0AM%E9doc%203%0AM%E9doc%204%0A.....%0A.....</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="898" y="141" w="-1" h="-1" measuredW="262" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Menu%20d%E9roulant%20qui%20affiche%20les%20m%E9dicaments</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="919" y="168" w="-1" h="-1" measuredW="220" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Quand%20on%20passe%20la%20souris%20sur%20l%27image</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::List" x="1170" y="335" w="230" h="321" measuredW="100" measuredH="132" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Medoc%201%0AM%E9doc%202%0AM%E9doc%203%0AM%E9doc%204%0A.....%0A.....</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::TabBar" x="412" y="78" w="1235" h="26" measuredW="280" measuredH="100" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Acceuil%2C%20Medecints%2C%20M%E9dicaments</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Image" x="434" y="115" w="69" h="53" measuredW="339" measuredH="217" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../../C%3A/Users/antonin.papillon/Desktop/gsb1.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Label" x="1540" y="635" w="-1" h="-1" measuredW="92" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Antonin%20Papillon</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="422" y="635" w="-1" h="-1" measuredW="80" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Simon%20Gilbert</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

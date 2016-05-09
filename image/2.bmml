@@ -1,0 +1,72 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1647" measuredH="690" mockupW="1235" mockupH="684">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="412" y="6" w="1235" h="684" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>14540253</color>
+        <text>A%20Web%20Page%0Ahttp%3A//172.16.21.120/GSB-prod</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="861" y="120" w="336" h="-1" measuredW="328" measuredH="46" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Galaxy%20Swiss%20Bourdin</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Image" x="468" y="188" w="220" h="204" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="688" y="188" w="837" h="197" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Le%20laboratoire%20Galaxy%20Swiss%20Bourdin%20%28GSB%29%20est%20issu%20de%20la%20fusion%20entre%20le%20g%E9ant%20am%E9ricain%20Galaxy%20%28sp%E9cialis%E9%20dans%0A%20%0Ale%20secteur%20des%20maladies%20virales%20dont%20le%20SIDA%20et%20les%20h%E9patites%29%20et%20le%20conglom%E9rat%20europ%E9en%20Swiss%20Bourdin%20%28travaillant%0A%20%0Asur%20des%20m%E9dicaments%20plus%20conventionnels%29%2C%20lui%20m%EAme%20d%E9j%E0%20union%20de%20trois%20petits%20laboratoires%20.%0A%20%0AEn%202009%2C%20les%20deux%20g%E9ants%20pharmaceutiques%20ont%20uni%20leurs%20forces%20pour%20cr%E9er%20un%20leader%20de%20ce%20secteur%20industriel.%0A%20%0AL%27entit%E9%20Galaxy%20Swiss%20Bourdin%20Europe%20a%20%E9tabli%20son%20si%E8ge%20administratif%20%E0%20Paris.%20%0A%20%0ALe%20si%E8ge%20social%20de%20la%20multinationale%20est%20situ%E9%20%E0%20Philadelphie%2C%20Pennsylvanie%2C%20aux%20Etats-Unis.%0A%20%0ALa%20France%20a%20%E9t%E9%20choisie%20comme%20t%E9moin%20pour%20l%27am%E9lioration%20du%20suivi%20de%20l%27activit%E9%20de%20visite.</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextInput" x="472" y="393" w="-1" h="-1" measuredW="140" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Image%20de%20l%27entreprise</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::TextInput" x="1124" y="629" w="-1" h="-1" measuredW="136" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Image%20m%E9dicaments</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextInput" x="812" y="629" w="-1" h="-1" measuredW="119" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Images%20Medecins</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Image" x="756" y="499" w="231" h="130" measuredW="77" measuredH="79" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lien%20vers%20la%20page%20%3A%20Contact%20medecin</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Image" x="1067" y="499" w="251" h="126" measuredW="77" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lien%20vers%20la%20page%20%3A%20Les%20m%E9dicaments</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::TabBar" x="412" y="79" w="1235" h="26" measuredW="280" measuredH="100" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Acceuil%2C%20Medecints%2C%20M%E9dicaments</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Image" x="427" y="116" w="81" h="55" measuredW="339" measuredH="217" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../../C%3A/Users/antonin.papillon/Desktop/gsb1.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Label" x="1540" y="635" w="-1" h="-1" measuredW="92" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Antonin%20Papillon</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="422" y="635" w="-1" h="-1" measuredW="80" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Simon%20Gilbert</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

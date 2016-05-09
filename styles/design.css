@@ -1,0 +1,134 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 29 janv. 2015, 12:16:56
+    Author     : simon.gilbert
+*/
+
+ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+li {
+ float:left; /*pour IE*/
+
+ }
+
+ table
+ {
+   border: medium solid #000000;
+   width: 50%;
+ }
+ td, th {
+   border: thin solid #6495ed;
+   width: 50%;
+
+ }
+
+ul li a {
+ display:block;
+ float:left;
+ width:100px;
+ line-height:50px; /*hauteur de l'image de fond*/
+ background:black repeat-x;
+ color:#DCDCDC;
+ text-decoration:none;
+ text-align:center;
+ }
+ul li a:hover {
+ background:black repeat-x;
+ color:lightblue;
+ }
+
+ #menu {
+position : static;
+  margin-top: 0%;
+  margin-left: 0%;
+  font-family: Impact;
+
+}
+
+ul#menu_horizontal li {
+display : inline;
+position : relative;
+top : 0px;
+left : 0px;
+font-family: Impact;
+}
+ul#menu_horizontal {
+list-style-type : none; /* Car sinon les puces se placent n'importe où */
+font-family: Impact;
+}
+
+.MEP1
+{
+    float: left;
+    display:inline-block;
+    text-align: center;
+}
+
+.MEP2
+{
+    float: right;
+    display:inline-block;
+    text-align: center;
+}
+.titre
+{
+    font-family: Impact;
+    text-align: center;
+    font-size: 24px;
+}
+
+.medoc2
+{
+    border-radius: 120px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.image2
+{
+    border-radius: 120px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+ body
+ {
+     background-image: url("animus.png");
+     width: 100%;
+     display : table;
+ }
+
+ html, body {
+     height : 100%;
+     margin : 0; padding : 0;
+ }
+
+  .imagelogo
+  {
+      float: left;
+
+  }
+
+
+  .texte
+  {
+      font-family: Comic Sans MS;
+  }
+
+   footer {
+      /*position: relative;
+      margin-top: 578px;*/
+      display : table-row;
+    height: 100px; /* à titre d'exemple */
+  }
