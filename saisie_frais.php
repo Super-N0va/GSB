@@ -13,17 +13,13 @@ session_start();
 </head>
 
  <?php
-
-        include './include/connexion_bdd.php';
+        require ('./include/connexion_bdd.php');
+        require ('./include/fonctions.php');
         header( 'content-type: text/html; charset=utf-8' );
     ?>
 
      <?php
-     if(!isset($_SESSION['nom']) && !isset($_SESSION['prenom'])){
-       header('Location: index.php?message=Veuillez vous connecter pour pouvoir accéder à cette page');
-     }
-
-       echo "<h2 class='titre'>".$_SESSION['nom']." ".$_SESSION['prenom']."</h2>";
+      checkConnection();
      ?>
     <br>
     <h1 class="titre">Visiteur médical</h1>
@@ -38,39 +34,9 @@ session_start();
 </div>
 
 <body>
-<?php
-include './include/connexion_bdd.php';
-$jour = date("d");
-$annee = date('Y');
-
-if ($jour < 10)// test pour savoir sur quel mois on est.
-{
-    if (date('m') == 1)// test du mois d'une année inférieur
-    {
-        $mois = 12;//on renvoit vers le mois d'après (décembre 12)
-        $annee = $annee - 1;//on renvoit vers l'année précédente
-    }
-    else
-    {
-        $mois = date('m') - 1;
-    }
-}
- else
-{
-     $mois = date('m');
-}
-
+  <?php
 // On vérifie si une fiche de frais existe pour ce mois là
-$_SESSION['annee_mois'] = $annee.$mois;
-$sql = "select * from fichefrais where idVisiteur = '" .$_SESSION['id']."' and mois='".$_SESSION['annee_mois']."'";
-$resultat = $connexion->query($sql);
-
-if (!$ligne = $resultat->fetch())
-{
-//pas de fiche de frais pour ce mois là on la crée avec les lignes frais forfait correpondante
-    $connexion->exec("insert into fichefrais values ('".$_SESSION['id']."', '".$_SESSION['annee_mois']."', 0, 0, NULL, 'CR')");
-    $connexion->exec("insert into lignefraisforfait select '".$_SESSION['id']."', '".$_SESSION['annee_mois']."', id, 0 from fraisforfait");
-}
+  creationFicheFrais($connexion, $_SESSION['id']);
 ?>
 <!-- Division pour le contenu principal -->
 <div id="contenu">
@@ -106,24 +72,8 @@ if (!$ligne = $resultat->fetch())
             </tr>
 
 <?php
-$resultatForfaitEtape = $connexion->query('SELECT quantite FROM lignefraisforfait WHERE idVisiteur = "' .$_SESSION['id']. '" AND idFraisForfait = "ETP" AND mois = "' .$_SESSION['annee_mois']. '"');
-$forfaitEtape = $resultatForfaitEtape->fetch();
-$resultatFraisKm = $connexion->query('SELECT quantite FROM lignefraisforfait WHERE idVisiteur = "' .$_SESSION['id']. '" AND idFraisForfait = "KM" AND mois = "' .$_SESSION['annee_mois']. '"');
-$fraisKm = $resultatFraisKm->fetch();
-$resultatNuitee = $connexion->query('SELECT quantite FROM lignefraisforfait WHERE idVisiteur = "' .$_SESSION['id']. '" AND idFraisForfait = "NUI" AND mois = "' .$_SESSION['annee_mois']. '"');
-$nuitee = $resultatNuitee->fetch();
-$resultatRepas = $connexion->query('SELECT quantite FROM lignefraisforfait WHERE idVisiteur = "' .$_SESSION['id']. '" AND idFraisForfait = "REP" AND mois = "' .$_SESSION['annee_mois']. '"');
-$repas = $resultatRepas->fetch();
+  recuperationElementsForfaitises($connexion, $_SESSION['id']);
 ?>
-
-            <h3>Tableau recapitulatif des éléments forfaitisé</h3>
-            <tr>
-                <td><?php echo $forfaitEtape['quantite']; ?></td>
-                <td><?php echo $fraisKm['quantite']; ?></td>
-                <td><?php echo $nuitee['quantite']; ?></td>
-                <td><?php echo $repas['quantite']; ?></td>
-            </tr>
-        </table>
 
     <form method="post" action="frais_hors_forfait.php">
         <fieldset>
@@ -149,28 +99,14 @@ $repas = $resultatRepas->fetch();
             </tr>
 
 <?php
-$resultatHorsForfait = $connexion->query('select libelle, date, montant from lignefraishorsforfait where idVisiteur = "' .$_SESSION['id']. '" and mois = ' .$_SESSION['annee_mois']);
-while($horsForfait = $resultatHorsForfait->fetch())
-{
+  recuperationElementsHorsForfait($connexion, $_SESSION['id']);
 ?>
-            <tr>
-                <td><?php echo date("d/m/Y", strtotime($horsForfait['date'])); ?></td>
-                <td><?php echo $horsForfait['libelle']; ?></td>
-                <td><?php echo $horsForfait['montant']; ?></td>
-            </tr>
-
-
-            <?php
-}
-            ?>
         </table>
-
-
     </div>
 </div>
     <!-- Division pour le pied de page -->
 
-<?php include './include/Pied_de_page.html';?>
+<?php include ('./include/Pied_de_page.html');?>
 
 </body>
 </html>

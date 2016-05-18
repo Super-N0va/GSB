@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 14 Janvier 2015 à 22:29
+-- Généré le :  Mer 18 Mai 2016 à 11:09
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -19,6 +19,41 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `gsb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(15) NOT NULL,
+  `prenom` varchar(15) NOT NULL,
+  `sexe` varchar(10) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `sujetMsg` varchar(20) NOT NULL,
+  `message` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+
+--
+-- Contenu de la table `contact`
+--
+
+INSERT INTO `contact` (`id`, `nom`, `prenom`, `sexe`, `email`, `sujetMsg`, `message`) VALUES
+(1, '', '', 'man', 'o@o.o', 'object', 'oooo'),
+(2, 'Bob', 'Bobby', 'Femme', 's.gilbert2330@gmail.com', 'Remarque', 'o'),
+(3, 'Kaaris', 'Zepo', 'Homme', 'kdoublea@gmail.com', 'Autre probleme', 'oRRRRRRGhhhHHh Puuuuteuh'),
+(4, 'o', 'o', '', 'o@o', 'Remarque', ''),
+(5, 'o', 'o', '', 'o@o', 'Remarque', ''),
+(6, 'o', 'o', 'Homme', 'o@o', 'Remarque', ''),
+(7, 'luc', 'skywalker', 'Femme', 'lele.parker@hotmail.fr', 'Remarque', 'o'),
+(8, 'luc', 'Simon', 'Homme', 'lele.parker@hotmail.fr', 'Remarque', 'o'),
+(9, 'ooooooooooooooo', 'ooooooooooooooo', 'Homme', 'o@o.ok', 'Remarque', 'o'),
+(10, 'o', 'o', 'Homme', 'o@o.o', 'Remarque', 'o'),
+(11, 'o', 'o', 'Homme', 'o@o', 'Remarque', 'o'),
+(12, 'o', 'o', 'Homme', 's.gilbert2330@gmail.com', 'Remarque', 'k');
 
 -- --------------------------------------------------------
 
@@ -113,6 +148,7 @@ INSERT INTO `fichefrais` (`idVisiteur`, `mois`, `nbJustificatifs`, `montantValid
 ('a17', '201411', 9, '2126.35', '2014-12-08', 'VA'),
 ('a17', '201412', 0, '0.00', '2015-01-14', 'CL'),
 ('a17', '201501', 0, NULL, '2015-01-14', 'CR'),
+('a17', '20164', 0, '0.00', NULL, 'CR'),
 ('a55', '201301', 11, '4757.30', '2013-03-08', 'RB'),
 ('a55', '201302', 5, '6092.07', '2013-04-01', 'RB'),
 ('a55', '201303', 5, '5175.19', '2013-05-03', 'RB'),
@@ -953,6 +989,10 @@ INSERT INTO `lignefraisforfait` (`idVisiteur`, `mois`, `idFraisForfait`, `quanti
 ('a17', '201501', 'KM', 0),
 ('a17', '201501', 'NUI', 0),
 ('a17', '201501', 'REP', 0),
+('a17', '20164', 'ETP', 0),
+('a17', '20164', 'KM', 0),
+('a17', '20164', 'NUI', 0),
+('a17', '20164', 'REP', 0),
 ('a55', '201301', 'ETP', 15),
 ('a55', '201301', 'KM', 796),
 ('a55', '201301', 'NUI', 10),
@@ -2558,11 +2598,11 @@ INSERT INTO `lignefraisforfait` (`idVisiteur`, `mois`, `idFraisForfait`, `quanti
 ('e22', '201405', 'NUI', 11),
 ('e22', '201405', 'REP', 10),
 ('e22', '201406', 'ETP', 10),
-('e22', '201406', 'KM', 303),
+('e22', '201406', 'KM', 303);
+INSERT INTO `lignefraisforfait` (`idVisiteur`, `mois`, `idFraisForfait`, `quantite`) VALUES
 ('e22', '201406', 'NUI', 9),
 ('e22', '201406', 'REP', 11),
-('e22', '201407', 'ETP', 14);
-INSERT INTO `lignefraisforfait` (`idVisiteur`, `mois`, `idFraisForfait`, `quantite`) VALUES
+('e22', '201407', 'ETP', 14),
 ('e22', '201407', 'KM', 429),
 ('e22', '201407', 'NUI', 8),
 ('e22', '201407', 'REP', 17),
@@ -6522,6 +6562,30 @@ INSERT INTO `lignefraishorsforfait` (`id`, `idVisiteur`, `mois`, `libelle`, `dat
 (3139, 'f4', '201411', 'location équipement vidéo/sonore', '2014-11-09', '616.00'),
 (3140, 'f4', '201411', 'achat de matériel de papèterie', '2014-11-06', '26.00'),
 (3141, 'f4', '201412', 'taxi', '2014-12-17', '38.00');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `medecins`
+--
+
+CREATE TABLE IF NOT EXISTS `medecins` (
+  `id` int(1) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(15) NOT NULL,
+  `prenom` varchar(15) NOT NULL,
+  `adresse` varchar(50) NOT NULL,
+  `numRue` int(4) NOT NULL,
+  `ville` varchar(20) NOT NULL,
+  `adresseMail` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `medecins`
+--
+
+INSERT INTO `medecins` (`id`, `nom`, `prenom`, `adresse`, `numRue`, `ville`, `adresseMail`) VALUES
+(1, 'Henry', 'Laflute', 'Rue du con', 2, 'Nantes', 'henry.laflute@gmail.com');
 
 -- --------------------------------------------------------
 
