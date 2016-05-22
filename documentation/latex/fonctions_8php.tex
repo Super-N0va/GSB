@@ -1,0 +1,201 @@
+\hypertarget{fonctions_8php}{}\section{Référence du fichier fonctions.\+php}
+\label{fonctions_8php}\index{fonctions.\+php@{fonctions.\+php}}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{fonctions_8php_ab993a4c8521490dac33fb61731d9e72c}{check\+Connection} ()
+\item 
+\hyperlink{fonctions_8php_a8cd6439762b5a1e11cb058d728d52239}{liste\+Mois} (\$connexion)
+\item 
+\hyperlink{fonctions_8php_a94e520cd534026c820617045060399af}{etat\+Fiche} (\$connexion, \$mois, \$id)
+\item 
+\hyperlink{fonctions_8php_a0b2b8054d74bc86ab51b76d17b6ccb25}{montant\+Fiche} (\$connexion, \$id)
+\item 
+\hyperlink{fonctions_8php_aa71e684aa4fc47f7333777837bf2ce0f}{ligne\+Frais\+Forfait} (\$connexion, \$id)
+\item 
+\hyperlink{fonctions_8php_a228642404156eaaa4e0b6184f7a2a478}{ligne\+Frais\+Hors\+Forfait} (\$connexion, \$id)
+\item 
+\hyperlink{fonctions_8php_ae4babb3201c13dff4bad4cc4320938e6}{creation\+Fiche\+Frais} (\$connexion, \$id)
+\item 
+\hyperlink{fonctions_8php_a03aff82c0b2e5923252159c14ad1138e}{recuperation\+Elements\+Forfaitises} (\$connexion, \$id)
+\item 
+\hyperlink{fonctions_8php_a4e556eb902417f82fd8e9f320044d6f8}{recuperation\+Elements\+Hors\+Forfait} (\$connexion, \$id)
+\item 
+\hyperlink{fonctions_8php_af2e26f0cc2aebd7ba2f47b66b3c03ead}{check\+Form} (\$connexion)
+\item 
+\hyperlink{fonctions_8php_a19c2ee16c2ed23049a9e2a80def643d0}{envoi\+Mail} (\$to, \$prenom)
+\item 
+\hyperlink{fonctions_8php_a9a8293305578bcacfdf7b79c44245e63}{insert\+Msg\+B\+D\+D} (\$connexion, \$file)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{fonctions_8php_ab993a4c8521490dac33fb61731d9e72c}{}\index{fonctions.\+php@{fonctions.\+php}!check\+Connection@{check\+Connection}}
+\index{check\+Connection@{check\+Connection}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{check\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}check\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_ab993a4c8521490dac33fb61731d9e72c}
+Fonction qui verifie si la connexion d\textquotesingle{}un utilisateur est bien active. \hypertarget{fonctions_8php_af2e26f0cc2aebd7ba2f47b66b3c03ead}{}\index{fonctions.\+php@{fonctions.\+php}!check\+Form@{check\+Form}}
+\index{check\+Form@{check\+Form}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{check\+Form}]{\setlength{\rightskip}{0pt plus 5cm}check\+Form (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_af2e26f0cc2aebd7ba2f47b66b3c03ead}
+Fonction qui permet de vérifier si le captcha du formulaire de contact a bien été rempli. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_ae4babb3201c13dff4bad4cc4320938e6}{}\index{fonctions.\+php@{fonctions.\+php}!creation\+Fiche\+Frais@{creation\+Fiche\+Frais}}
+\index{creation\+Fiche\+Frais@{creation\+Fiche\+Frais}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{creation\+Fiche\+Frais}]{\setlength{\rightskip}{0pt plus 5cm}creation\+Fiche\+Frais (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_ae4babb3201c13dff4bad4cc4320938e6}
+Fonction qui permet de créer une nouvelle fiche de frais. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+type & {\em \$id} & -\/$>$ variable récupérant l\textquotesingle{}id de l\textquotesingle{}utilisateur connecté. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_a19c2ee16c2ed23049a9e2a80def643d0}{}\index{fonctions.\+php@{fonctions.\+php}!envoi\+Mail@{envoi\+Mail}}
+\index{envoi\+Mail@{envoi\+Mail}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{envoi\+Mail}]{\setlength{\rightskip}{0pt plus 5cm}envoi\+Mail (
+\begin{DoxyParamCaption}
+\item[{}]{\$to, }
+\item[{}]{\$prenom}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_a19c2ee16c2ed23049a9e2a80def643d0}
+Fonction qui permet d\textquotesingle{}envoyer un email automatique après validation du formulaire. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$to} & -\/$>$ variable contenant l\textquotesingle{}email de destination rentrée par l\textquotesingle{}utlisateur. \\
+\hline
+type & {\em \$prenom} & -\/$>$ variable récupérant le prénom de l\textquotesingle{}utilisateur concerné. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_a94e520cd534026c820617045060399af}{}\index{fonctions.\+php@{fonctions.\+php}!etat\+Fiche@{etat\+Fiche}}
+\index{etat\+Fiche@{etat\+Fiche}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{etat\+Fiche}]{\setlength{\rightskip}{0pt plus 5cm}etat\+Fiche (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$mois, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_a94e520cd534026c820617045060399af}
+Fonction qui permet de connaître l\textquotesingle{}état d\textquotesingle{}une fiche de frais. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+type & {\em \$mois} & -\/$>$ variable récupérant le mois concerné. \\
+\hline
+type & {\em \$id} & -\/$>$ variable récupérant l\textquotesingle{}id de l\textquotesingle{}utilisateur connecté. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_a9a8293305578bcacfdf7b79c44245e63}{}\index{fonctions.\+php@{fonctions.\+php}!insert\+Msg\+B\+D\+D@{insert\+Msg\+B\+D\+D}}
+\index{insert\+Msg\+B\+D\+D@{insert\+Msg\+B\+D\+D}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{insert\+Msg\+B\+D\+D}]{\setlength{\rightskip}{0pt plus 5cm}insert\+Msg\+B\+D\+D (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_a9a8293305578bcacfdf7b79c44245e63}
+Fonction qui permet d\textquotesingle{}ajouter un fichier dans le dossier received\+\_\+files en vérifiant sa taille et son extension. Elle ajoute également les différentes coordonnées dans la base de données. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+type & {\em \$file} & -\/$>$ variable récupérant le fichier téléversé par l\textquotesingle{}utilisateur. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_aa71e684aa4fc47f7333777837bf2ce0f}{}\index{fonctions.\+php@{fonctions.\+php}!ligne\+Frais\+Forfait@{ligne\+Frais\+Forfait}}
+\index{ligne\+Frais\+Forfait@{ligne\+Frais\+Forfait}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{ligne\+Frais\+Forfait}]{\setlength{\rightskip}{0pt plus 5cm}ligne\+Frais\+Forfait (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_aa71e684aa4fc47f7333777837bf2ce0f}
+Fonction qui affiche la quantité d\textquotesingle{}éléments forfaitisés. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+type & {\em \$id} & -\/$>$ variable récupérant l\textquotesingle{}id de l\textquotesingle{}utilisateur connecté. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_a228642404156eaaa4e0b6184f7a2a478}{}\index{fonctions.\+php@{fonctions.\+php}!ligne\+Frais\+Hors\+Forfait@{ligne\+Frais\+Hors\+Forfait}}
+\index{ligne\+Frais\+Hors\+Forfait@{ligne\+Frais\+Hors\+Forfait}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{ligne\+Frais\+Hors\+Forfait}]{\setlength{\rightskip}{0pt plus 5cm}ligne\+Frais\+Hors\+Forfait (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_a228642404156eaaa4e0b6184f7a2a478}
+Fonction qui affiche les éléments hors forfait d\textquotesingle{}une fiche de frais. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+type & {\em \$id} & -\/$>$ variable récupérant l\textquotesingle{}id de l\textquotesingle{}utilisateur connecté. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_a8cd6439762b5a1e11cb058d728d52239}{}\index{fonctions.\+php@{fonctions.\+php}!liste\+Mois@{liste\+Mois}}
+\index{liste\+Mois@{liste\+Mois}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{liste\+Mois}]{\setlength{\rightskip}{0pt plus 5cm}liste\+Mois (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_a8cd6439762b5a1e11cb058d728d52239}
+Fonction qui affiche les différents mois dans une liste déroulante. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_a0b2b8054d74bc86ab51b76d17b6ccb25}{}\index{fonctions.\+php@{fonctions.\+php}!montant\+Fiche@{montant\+Fiche}}
+\index{montant\+Fiche@{montant\+Fiche}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{montant\+Fiche}]{\setlength{\rightskip}{0pt plus 5cm}montant\+Fiche (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_a0b2b8054d74bc86ab51b76d17b6ccb25}
+Fonction qui affiche le montant total d\textquotesingle{}une fiche de frais. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+type & {\em \$id} & -\/$>$ variable récupérant l\textquotesingle{}id de l\textquotesingle{}utilisateur connecté. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_a03aff82c0b2e5923252159c14ad1138e}{}\index{fonctions.\+php@{fonctions.\+php}!recuperation\+Elements\+Forfaitises@{recuperation\+Elements\+Forfaitises}}
+\index{recuperation\+Elements\+Forfaitises@{recuperation\+Elements\+Forfaitises}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{recuperation\+Elements\+Forfaitises}]{\setlength{\rightskip}{0pt plus 5cm}recuperation\+Elements\+Forfaitises (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_a03aff82c0b2e5923252159c14ad1138e}
+Fonction qui permet d\textquotesingle{}afficher la quantité de chaque éléments constituant une fiche de fras du mois et de l\textquotesingle{}année actuelle. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+type & {\em \$id} & -\/$>$ variable récupérant l\textquotesingle{}id de l\textquotesingle{}utilisateur connecté. \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8php_a4e556eb902417f82fd8e9f320044d6f8}{}\index{fonctions.\+php@{fonctions.\+php}!recuperation\+Elements\+Hors\+Forfait@{recuperation\+Elements\+Hors\+Forfait}}
+\index{recuperation\+Elements\+Hors\+Forfait@{recuperation\+Elements\+Hors\+Forfait}!fonctions.\+php@{fonctions.\+php}}
+\subsubsection[{recuperation\+Elements\+Hors\+Forfait}]{\setlength{\rightskip}{0pt plus 5cm}recuperation\+Elements\+Hors\+Forfait (
+\begin{DoxyParamCaption}
+\item[{}]{\$connexion, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{fonctions_8php_a4e556eb902417f82fd8e9f320044d6f8}
+Fonction qui permet d\textquotesingle{}afficher les éléments hors forfait du mois et de l\textquotesingle{}année actuelle. 
+\begin{DoxyParams}[1]{Paramètres}
+type & {\em \$connexion} & -\/$>$ variable de connexion à la base de données. \\
+\hline
+type & {\em \$id} & -\/$>$ variable récupérant l\textquotesingle{}id de l\textquotesingle{}utilisateur connecté. \\
+\hline
+\end{DoxyParams}

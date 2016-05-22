@@ -31,7 +31,7 @@ ob_start();
     <br/><br/>
 
     <?php
-    fetchDate($connexion);
+    afficheDate($connexion);
     ?>
 
     <br/><br/>

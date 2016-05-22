@@ -1,9 +1,9 @@
 <?php
-    $Hostname = "localhost";
-    $NameBDD ="gsb";
+    $Hostname = "172.16.99.3";
+    $NameBDD ="s.gilbert";
     $port = "3306";
-    $User ="root";
-    $Password = "";
+    $User ="s.gilbert";
+    $Password = "trgb3zbj";
 try
 {
     $connexion = new PDO ('mysql:host='.$Hostname.';port='.$port.';dbname='.$NameBDD, $User, $Password);

@@ -197,21 +197,21 @@
 
 #body {
     width:60%;
-    margin-left:250px;    
+    margin-left:250px;
 }
 
 .footer {
       position: relative;
-      margin-top: 578px; 
-    
+      margin-top: 578px;
+
   }
-  
+
   body
  {
-     background-image: url("image/animus.png");
-        
+     background-image: url("animus.png");
+
  }
- 
+
  .titre
 {
     font-family: Impact;
